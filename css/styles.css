@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #e2e8f0;
+    color: #0f172a; 
+    background-image: url(../images/VWSN1254.JPG);
+    background-size:repeat;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    text-align: center;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0f172a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 10%;
+    text-align: center;
+    
+
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 1ms;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color:burlywood;
+}
+
+/* CONTACT */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    border: #0f172a;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #0f172a;
+    color: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
