@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: #e2e8f0;
     color: #0f172a; 
     background-image: url(../images/VWSN1254.JPG);
-    background-size:repeat;
-    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -19,7 +24,7 @@ html {
 
 /* NAVBAR */
 .navbar {
-    position: sticky;
+    position:sticky;
     top: 0;
     background: #0f172a;
     color: white;
@@ -32,7 +37,7 @@ html {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 8px;
 }
 
 .nav-links a {
@@ -42,13 +47,13 @@ html {
 
 /* HERO */
 .hero {
-    height: 90vh;
+    height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #f1f5f9;
     text-align: center;
-    
+    align-items: center;
 }
 
 .btn {
@@ -57,7 +62,7 @@ html {
     background: #0f172a;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -65,6 +70,8 @@ html {
 section {
     padding: 60px 10%;
     text-align: center;
+    text-decoration: solid;
+    font-weight: 900;
     
 
 }
@@ -96,6 +103,8 @@ form {
     max-width: 400px;
     margin: auto;
     border: #0f172a;
+    font-weight: 1rem;
+
 }
 
 input, textarea {
