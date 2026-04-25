@@ -7,15 +7,13 @@ header{
     position: sticky;
     top: 0%;
     z-index: 1000;
+
 }
 body {
     font-family: 'Poppins', sans-serif;
     background: #e2e8f0;
     color: #0f172a; 
-    background-image: url(../images/VWSN1254.JPG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image:linear-gradient(to right, #ced8e7, #2b74ce);
 }
 
 html {
@@ -30,24 +28,26 @@ html {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 20px 30px;
 
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 8px;
+    gap: 20px;
+    text-decoration: solid;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* HERO */
 .hero {
-    height: 30vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,8 +55,18 @@ html {
     text-align: center;
     align-items: center;
 }
+img.profile-pic {
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 20%;
 
+}
+div.hero div {
+    max-width: 600px;
+    margin: auto;
+}
 .btn {
+    margin-top: 0.5px;
     display: inline-block;
     padding: 10px 20px;
     background: #0f172a;
